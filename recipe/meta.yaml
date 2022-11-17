@@ -13,16 +13,15 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python
   run:
     - cryptography
     - idna
-    - python >=3.5
+    - python
 
 test:
   source_files:
