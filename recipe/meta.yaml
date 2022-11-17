@@ -43,13 +43,17 @@ test:
 
 about:
   home: https://github.com/python-trio/trustme
+  description: |
+    trustme is a tiny Python package that does one thing: it gives you a fake certificate authority (CA) 
+    that you can use to generate fake TLS certs to use in your tests.
   summary: '#1 quality TLS certs while you wait, for the discerning tester'
   license: Apache-2.0 or MIT
   license_file:
     - LICENSE.MIT
     - LICENSE.APACHE2
-  doc_url: https://trustme.readthedocs.io
-  doc_source_url: https://github.com/python-trio/trustme/tree/v{{ version }}/docs
+  license_family: MIT
+  dev_url: https://trustme.readthedocs.io
+  doc_url: https://github.com/python-trio/trustme/tree/v{{ version }}/docs
 
 extra:
   recipe-maintainers:
