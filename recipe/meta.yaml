@@ -33,6 +33,8 @@ test:
     - trustme
   commands:
     - pip check
+    # This has been changed due to the following error:
+    # FAILED tests/test_trustme.py::test_pyopenssl_end_to_end - MemoryError: Cannot...
     - pytest --cov trustme -k "not test_pyopenssl_end_to_end"
   requires:
     - pip
