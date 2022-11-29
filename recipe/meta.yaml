@@ -52,8 +52,8 @@ about:
     - LICENSE.MIT
     - LICENSE.APACHE2
   license_family: MIT
-  dev_url: https://trustme.readthedocs.io
-  doc_url: https://github.com/python-trio/trustme/tree/v{{ version }}/docs
+  dev_url: https://github.com/python-trio/trustme
+  doc_url: https://trustme.readthedocs.io
 
 extra:
   recipe-maintainers:
