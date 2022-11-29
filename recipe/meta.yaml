@@ -42,7 +42,7 @@ test:
     - service_identity
 
 about:
-  home: https://github.com/python-trio/trustme
+  home: https://trustme.readthedocs.io/
   description: |
     trustme is a tiny Python package that does one thing: it gives you a fake certificate authority (CA) 
     that you can use to generate fake TLS certs to use in your tests.
