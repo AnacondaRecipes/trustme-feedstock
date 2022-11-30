@@ -33,14 +33,13 @@ test:
     - trustme
   commands:
     - pip check
-    # This has been changed due to the following error:
-    # FAILED tests/test_trustme.py::test_pyopenssl_end_to_end - MemoryError: Cannot...
-    - pytest #--cov trustme --cov-fail-under 98
-    #-k "not test_pyopenssl_end_to_end"
+    # test_pyopenssl_end_to_end does not work on osx-arm64:
+    # https://github.com/pyca/pyopenssl/issues/873
+    - pytest  # [not (osx and arm64)]
+    - pytest -k "not test_pyopenssl_end_to_end"  # [osx and arm64]
   requires:
     - pip
     - pytest
-    #- pytest-cov
     - pyopenssl
     - service_identity
 
