@@ -35,12 +35,12 @@ test:
     - pip check
     # This has been changed due to the following error:
     # FAILED tests/test_trustme.py::test_pyopenssl_end_to_end - MemoryError: Cannot...
-    - pytest --cov trustme --cov-fail-under 98 # [win and linux]
+    - pytest #--cov trustme --cov-fail-under 98
     #-k "not test_pyopenssl_end_to_end"
   requires:
     - pip
     - pytest
-    - pytest-cov
+    #- pytest-cov
     - pyopenssl
     - service_identity
 
